@@ -1,0 +1,145 @@
+{
+  "project_info": {
+    "project_number": "493096036143",
+    "project_id": "food-on-the-way-4d876",
+    "storage_bucket": "food-on-the-way-4d876.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493096036143:android:c9c73c414b1000f651e3da",
+        "android_client_info": {
+          "package_name": "com.food_on_the_way.delivery_boy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493096036143-0ksi45svca4d5nminssvho14eiddu2j1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.food_on_the_way.delivery_boy",
+            "certificate_hash": "507f59f3e9ab6227cdf2f00ff47b02559785c6c6"
+          }
+        },
+        {
+          "client_id": "493096036143-398uk6jjjflpecbgliiq32kv2g34il55.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.food_on_the_way.delivery_boy",
+            "certificate_hash": "0a89a6fca13c88202f1325040c7b231251f85b5d"
+          }
+        },
+        {
+          "client_id": "493096036143-dopocnke0coc1tk2ebtj1vjf17d5rt3u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.food_on_the_way.delivery_boy",
+            "certificate_hash": "688fa69646cb862d677b2630de357afce7115f3c"
+          }
+        },
+        {
+          "client_id": "493096036143-ecurpjbneq2nrqgil4id7g6qhhsktf57.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.food_on_the_way.delivery_boy",
+            "certificate_hash": "9692bc0120d1d8897f0f6d6470b36b90f311c73a"
+          }
+        },
+        {
+          "client_id": "493096036143-e3j2i0okvggsf73tt0jfplha088lvhrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfyOqhC4zwFB-0fUZuQ7vw60mP_2Xzz8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493096036143-e3j2i0okvggsf73tt0jfplha088lvhrh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493096036143:android:90aad1b9d49cbb5451e3da",
+        "android_client_info": {
+          "package_name": "com.food_on_the_way.seller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493096036143-ngp647o9j7oiqnjp00j3aup9e54nqdck.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.food_on_the_way.seller",
+            "certificate_hash": "943f2e7231e083f98ec2d808fe2203f0f3278080"
+          }
+        },
+        {
+          "client_id": "493096036143-e3j2i0okvggsf73tt0jfplha088lvhrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfyOqhC4zwFB-0fUZuQ7vw60mP_2Xzz8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493096036143-e3j2i0okvggsf73tt0jfplha088lvhrh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493096036143:android:6685d7cc5c1e84e551e3da",
+        "android_client_info": {
+          "package_name": "com.food_on_the_way_user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493096036143-k0dmuo96jh3auameusbaa2gkb40phauh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.food_on_the_way_user",
+            "certificate_hash": "9692bc0120d1d8897f0f6d6470b36b90f311c73a"
+          }
+        },
+        {
+          "client_id": "493096036143-e3j2i0okvggsf73tt0jfplha088lvhrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfyOqhC4zwFB-0fUZuQ7vw60mP_2Xzz8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493096036143-e3j2i0okvggsf73tt0jfplha088lvhrh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
