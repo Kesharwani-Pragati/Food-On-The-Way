@@ -1,49 +1,70 @@
 {
   "project_info": {
-    "project_number": "686348429095",
-    "project_id": "food-on-the-way-c85f7",
-    "storage_bucket": "food-on-the-way-c85f7.appspot.com"
+    "project_number": "492234289361",
+    "project_id": "food-on-the-way-d1b7a",
+    "storage_bucket": "food-on-the-way-d1b7a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:686348429095:android:e68a588473bf55e0e92b02",
+        "mobilesdk_app_id": "1:492234289361:android:71b5d149fc0a31e6bdd5f0",
+        "android_client_info": {
+          "package_name": "com.djamware.myflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492234289361-ls85us7rvq377v2tuhul6b2ga5c04tan.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAElXoZkW-iCDcptvYQnmxfQoqtcCja1co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492234289361-ls85us7rvq377v2tuhul6b2ga5c04tan.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492234289361:android:e9a92c781e2008f7bdd5f0",
         "android_client_info": {
           "package_name": "com.food_on_the_way.admin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "686348429095-4ibs4k8p2pu0m7al5lqgr2rplh10h7fg.apps.googleusercontent.com",
+          "client_id": "492234289361-kh7g94dr2dunlf3srfmlv68qe6namg4v.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.food_on_the_way.admin",
-            "certificate_hash": "025fbc6e09bc0002a5504b74292b416ac4d9cb99"
+            "certificate_hash": "a604526045c4d4840fa0ec60bcb62fe15cb5c289"
           }
         },
         {
-          "client_id": "686348429095-mo90kjpk0eauvg5dljpdpq4f537cqug3.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.food_on_the_way.admin",
-            "certificate_hash": "9692bc0120d1d8897f0f6d6470b36b90f311c73a"
-          }
-        },
-        {
-          "client_id": "686348429095-d20d34cnj4fq6iutlqvh8892q7adld9k.apps.googleusercontent.com",
+          "client_id": "492234289361-ls85us7rvq377v2tuhul6b2ga5c04tan.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDC9NdboLvAC0qAwwXjsKqhFOU0XNRG-Ys"
+          "current_key": "AIzaSyAElXoZkW-iCDcptvYQnmxfQoqtcCja1co"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "686348429095-d20d34cnj4fq6iutlqvh8892q7adld9k.apps.googleusercontent.com",
+              "client_id": "492234289361-ls85us7rvq377v2tuhul6b2ga5c04tan.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -52,35 +73,35 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:686348429095:android:13257a5ee7e08dbde92b02",
+        "mobilesdk_app_id": "1:492234289361:android:825d9e542635e37cbdd5f0",
         "android_client_info": {
           "package_name": "com.food_on_the_way.delivery_boy"
         }
       },
       "oauth_client": [
         {
-          "client_id": "686348429095-mkcqiq92gdvp6mra0a3n3m6sc9cm16a3.apps.googleusercontent.com",
+          "client_id": "492234289361-0p3k46rcbj94vcg9kgvvetcr2b1v5t84.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.food_on_the_way.delivery_boy",
-            "certificate_hash": "519a216736d5e9e7e8b56a9cc14fe62705775923"
+            "certificate_hash": "a604526045c4d4840fa0ec60bcb62fe15cb5c289"
           }
         },
         {
-          "client_id": "686348429095-d20d34cnj4fq6iutlqvh8892q7adld9k.apps.googleusercontent.com",
+          "client_id": "492234289361-ls85us7rvq377v2tuhul6b2ga5c04tan.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDC9NdboLvAC0qAwwXjsKqhFOU0XNRG-Ys"
+          "current_key": "AIzaSyAElXoZkW-iCDcptvYQnmxfQoqtcCja1co"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "686348429095-d20d34cnj4fq6iutlqvh8892q7adld9k.apps.googleusercontent.com",
+              "client_id": "492234289361-ls85us7rvq377v2tuhul6b2ga5c04tan.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -89,27 +110,35 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:686348429095:android:b1036cd572d7ee9ce92b02",
+        "mobilesdk_app_id": "1:492234289361:android:a84a40a5180cb146bdd5f0",
         "android_client_info": {
           "package_name": "com.food_on_the_way.seller"
         }
       },
       "oauth_client": [
         {
-          "client_id": "686348429095-d20d34cnj4fq6iutlqvh8892q7adld9k.apps.googleusercontent.com",
+          "client_id": "492234289361-1tqf0p9clcmteg31a8eclch64qi3218c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.food_on_the_way.seller",
+            "certificate_hash": "a604526045c4d4840fa0ec60bcb62fe15cb5c289"
+          }
+        },
+        {
+          "client_id": "492234289361-ls85us7rvq377v2tuhul6b2ga5c04tan.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDC9NdboLvAC0qAwwXjsKqhFOU0XNRG-Ys"
+          "current_key": "AIzaSyAElXoZkW-iCDcptvYQnmxfQoqtcCja1co"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "686348429095-d20d34cnj4fq6iutlqvh8892q7adld9k.apps.googleusercontent.com",
+              "client_id": "492234289361-ls85us7rvq377v2tuhul6b2ga5c04tan.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -118,43 +147,35 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:686348429095:android:c0b86f22a7941fdee92b02",
+        "mobilesdk_app_id": "1:492234289361:android:338968fa4fa28123bdd5f0",
         "android_client_info": {
           "package_name": "com.food_on_the_way_user"
         }
       },
       "oauth_client": [
         {
-          "client_id": "686348429095-6i4aafo0utf0m35gfbjr6je5l5cv8bf4.apps.googleusercontent.com",
+          "client_id": "492234289361-8h9kgv76j2sj4qmssbniqcu3r1q71r03.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.food_on_the_way_user",
-            "certificate_hash": "5175be68c424bfc5126ea4964053da32aede06ab"
+            "certificate_hash": "a604526045c4d4840fa0ec60bcb62fe15cb5c289"
           }
         },
         {
-          "client_id": "686348429095-rmr9ks3qhabm9llp63ns18jm36pd1aqt.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.food_on_the_way_user",
-            "certificate_hash": "9692bc0120d1d8897f0f6d6470b36b90f311c73a"
-          }
-        },
-        {
-          "client_id": "686348429095-d20d34cnj4fq6iutlqvh8892q7adld9k.apps.googleusercontent.com",
+          "client_id": "492234289361-ls85us7rvq377v2tuhul6b2ga5c04tan.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDC9NdboLvAC0qAwwXjsKqhFOU0XNRG-Ys"
+          "current_key": "AIzaSyAElXoZkW-iCDcptvYQnmxfQoqtcCja1co"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "686348429095-d20d34cnj4fq6iutlqvh8892q7adld9k.apps.googleusercontent.com",
+              "client_id": "492234289361-ls85us7rvq377v2tuhul6b2ga5c04tan.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
