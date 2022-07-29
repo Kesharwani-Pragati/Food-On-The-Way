@@ -141,9 +141,9 @@
     },
     {
       "name": "firebase_messaging",
-      "rootUri": "file:///home/alphawizz/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-10.0.9",
+      "rootUri": "file:///home/alphawizz/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-11.4.4",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.16"
     },
     {
       "name": "firebase_messaging_platform_interface",
@@ -542,7 +542,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-07-19T04:50:39.783280Z",
+  "generated": "2022-07-29T14:24:56.519588Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }

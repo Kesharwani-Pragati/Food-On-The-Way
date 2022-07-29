@@ -10,6 +10,7 @@ import 'package:deliveryboy_multivendor/Helper/cropped_container.dart';
 import 'package:deliveryboy_multivendor/Helper/string.dart';
 import 'package:deliveryboy_multivendor/Screens/home.dart';
 import 'package:deliveryboy_multivendor/Screens/privacy_policy.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -26,8 +27,8 @@ class Login extends StatefulWidget {
 
 class _LoginPageState extends State<Login> with TickerProviderStateMixin {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-  final mobileController = TextEditingController(text: "8770669964");
-  final passwordController = TextEditingController(text: "123456");
+  final mobileController = TextEditingController();
+  final passwordController = TextEditingController();
   String? countryName;
   FocusNode? passFocus, monoFocus = FocusNode();
 
@@ -36,12 +37,13 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
   String? password, mobile, username, email, id, mobileno;
   bool _isNetworkAvail = true;
   Animation? buttonSqueezeanimation;
-
+  var fcmToken;
   AnimationController? buttonController;
 
   @override
   void initState() {
     super.initState();
+    geFcmToken();
     buttonController = AnimationController(
         duration: const Duration(milliseconds: 2000), vsync: this);
 
@@ -55,6 +57,14 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
         0.150,
       ),
     ));
+  }
+
+  geFcmToken() async {
+    String? token = await FirebaseMessaging.instance.getToken();
+    setState(() {
+      fcmToken = token!;
+      print(">>>>>>>>>>>>>>>>>>>>>>>>>>>$fcmToken");
+    });
   }
 
   @override
@@ -146,7 +156,7 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
   }
 
   Future<void> getLoginUser() async {
-    var data = {MOBILE: mobile, PASSWORD: password};
+    var data = {MOBILE: mobile, PASSWORD: password, "fcm_id": "$fcmToken"};
     try {
       var response = await post(getUserLoginApi, body: data, headers: headers)
           .timeout(Duration(seconds: timeOut));
@@ -275,6 +285,7 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
         top: 30.0,
       ),
       child: TextFormField(
+        maxLength: 10,
         onFieldSubmitted: (v) {
           FocusScope.of(context).requestFocus(passFocus);
         },
@@ -289,6 +300,7 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
           mobile = value;
         },
         decoration: InputDecoration(
+          counterText: "",
           prefixIcon: const Icon(
             Icons.call_outlined,
             color: fontColor,

@@ -1,0 +1,6 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/eshop/vendor/vendor_eshop/MainActivity.java
+ com.food_on_the_way.admin.MainActivity
+com/food_on_the_way/admin/BuildConfig.java
+ com.food_on_the_way.admin.BuildConfig
