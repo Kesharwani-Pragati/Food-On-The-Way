@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/sms_autofill/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/01f86e3643c3bea0f4344b83e9b7f578/jetified-play-services-auth-19.2.0/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/sms_autofill/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/01f86e3643c3bea0f4344b83e9b7f578/jetified-play-services-auth-19.2.0/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/sms_autofill/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/01f86e3643c3bea0f4344b83e9b7f578/jetified-play-services-auth-19.2.0/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    }
+]

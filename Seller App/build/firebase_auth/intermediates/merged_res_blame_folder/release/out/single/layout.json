@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/firebase_auth/intermediates/res/merged/release/layout/browser_actions_context_menu_row.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/cfce8cf6cd985c72abe5bd866dae8d14/browser-1.4.0/res/layout/browser_actions_context_menu_row.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/firebase_auth/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/927bd680c39f9a20b0f3fa5d823de851/core-1.6.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/firebase_auth/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/927bd680c39f9a20b0f3fa5d823de851/core-1.6.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/firebase_auth/intermediates/res/merged/release/layout/browser_actions_context_menu_page.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/cfce8cf6cd985c72abe5bd866dae8d14/browser-1.4.0/res/layout/browser_actions_context_menu_page.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/firebase_auth/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/927bd680c39f9a20b0f3fa5d823de851/core-1.6.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/firebase_auth/intermediates/res/merged/release/layout/custom_dialog.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/927bd680c39f9a20b0f3fa5d823de851/core-1.6.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/firebase_auth/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/927bd680c39f9a20b0f3fa5d823de851/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/firebase_auth/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/927bd680c39f9a20b0f3fa5d823de851/core-1.6.0/res/layout/notification_template_icon_group.xml"
+    }
+]

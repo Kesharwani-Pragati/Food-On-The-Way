@@ -47,7 +47,7 @@ dependencies:
   fl_chart: ^0.36.3 
   file_picker: ^4.2.7 #for file pick like video,image etc.
   flutter_local_notifications: any
-  firebase_messaging: ^11.2.3
+  firebase_messaging: ^11.2.10
   #flutter_quill: ^2.0.13
   sticky_headers: ^0.2.0
   flutter_html: ^2.2.1

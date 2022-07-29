@@ -135,7 +135,7 @@ class _SendOtpState extends State<SendOtp> with TickerProviderStateMixin {
   }
 
   Future<void> getVerifyUser() async {
-    var data = {Mobile: mobile};
+    var data = {Mobile: mobile, "forgot_otp":"true"};
     print(data);
     apiBaseHelper.postAPICall(verifyUserApi, data).then(
       (getdata) async {
@@ -168,6 +168,7 @@ class _SendOtpState extends State<SendOtp> with TickerProviderStateMixin {
         }
         if (widget.title == getTranslated(context, "FORGOT_PASS_TITLE")!) {
           if (!error) {
+            int otp = getdata["data"]["otp"];
             setPrefrence(Mobile, mobile!);
             setPrefrence(COUNTRY_CODE, countrycode!);
 
@@ -176,6 +177,7 @@ class _SendOtpState extends State<SendOtp> with TickerProviderStateMixin {
               MaterialPageRoute(
                 builder: (context) => VerifyOtp(
                   mobileNumber: mobile!,
+                  otp: otp,
                   countryCode: countrycode,
                   title: getTranslated(context, "FORGOT_PASS_TITLE")!,
                 ),
@@ -260,6 +262,7 @@ class _SendOtpState extends State<SendOtp> with TickerProviderStateMixin {
 
   setMono() {
     return TextFormField(
+      maxLength: 10,
       keyboardType: TextInputType.number,
       controller: mobileController,
       style: Theme.of(this.context)
@@ -272,6 +275,7 @@ class _SendOtpState extends State<SendOtp> with TickerProviderStateMixin {
       },
       validator: (val) => validateMob(val!, context),
       decoration: InputDecoration(
+        counterText: "",
         focusedBorder: UnderlineInputBorder(
           borderSide: BorderSide(color: primary),
           borderRadius: BorderRadius.circular(7.0),

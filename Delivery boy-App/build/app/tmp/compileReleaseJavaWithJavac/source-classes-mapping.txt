@@ -1,0 +1,6 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/deliveryboy/multivendor/deliveryboy_multivendor/MainActivity.java
+ com.food_on_the_way.delivery_boy.MainActivity
+com/food_on_the_way/delivery_boy/BuildConfig.java
+ com.food_on_the_way.delivery_boy.BuildConfig

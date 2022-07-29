@@ -761,7 +761,7 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
             var pan_number = data[panNumber];
             var status = data[STATUS];
             var storeLogo = data[StoreLogo];
-            onOf = data["open_close_status"] == "0" ? false : true;
+            onOf = data["online"] == "0" ? false : true;
 
             print("bank name : $bankName");
             saveUserDetail(

@@ -1,4 +1,5 @@
 import 'package:eshopmultivendor/Helper/ApiBaseHelper.dart';
+import 'package:eshopmultivendor/Screen/OrderList.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -24,7 +25,8 @@ class PushNotificationService {
     iOSPermission();
     messaging.getToken().then(
       (token) async {
-        if (CUR_USERID != null && CUR_USERID != "") _registerToken(token);
+        if (CUR_USERID != null && CUR_USERID != "")
+          _registerToken(token);
       },
     );
 
@@ -44,12 +46,20 @@ class PushNotificationService {
     flutterLocalNotificationsPlugin.initialize(
       initializationSettings,
       onSelectNotification: (String? payload) async {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => MyApp(),
-          ),
-        );
+        if(payload != null){
+          List<String> pay = payload.split(",");
+          if (pay[0] == 'order') {
+            Navigator.push(
+                context, (MaterialPageRoute(builder: (context) => OrderList())));
+          }
+        } else {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => MyApp(),
+            ),
+          );
+        }
       },
     );
 
@@ -64,6 +74,8 @@ class PushNotificationService {
         var body = data.body.toString();
         var type = message.data['type'];
         if (type == "commission") {
+          generateSimpleNotication(title, body, type);
+        } else if(type == "order"){
           generateSimpleNotication(title, body, type);
         }
       },
@@ -86,7 +98,14 @@ class PushNotificationService {
                 builder: (context) => MyApp(),
               ),
             );
-          } else {
+          } else if(type == "order"){
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => OrderList(),
+              ),
+            );
+          }else {
             Navigator.push(
               context,
               MaterialPageRoute(
@@ -116,7 +135,14 @@ class PushNotificationService {
                 builder: (context) => MyApp(),
               ),
             );
-          } else {
+          } else if(type == "order"){
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => OrderList(),
+              ),
+            );
+          }else {
             Navigator.push(
               context,
               MaterialPageRoute(
@@ -147,7 +173,6 @@ class PushNotificationService {
 //========================= _registerToken =====================================
 
   void _registerToken(String? token) async {
- 
 
     var parameter = {
       'user_id': CUR_USERID,

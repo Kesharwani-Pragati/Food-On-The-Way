@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/flutter_plugin_android_lifecycle/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/927bd680c39f9a20b0f3fa5d823de851/core-1.6.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/flutter_plugin_android_lifecycle/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/927bd680c39f9a20b0f3fa5d823de851/core-1.6.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/flutter_plugin_android_lifecycle/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/927bd680c39f9a20b0f3fa5d823de851/core-1.6.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/flutter_plugin_android_lifecycle/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/927bd680c39f9a20b0f3fa5d823de851/core-1.6.0/res/layout-v21/notification_template_icon_group.xml"
+    }
+]

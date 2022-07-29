@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-en-rCA/values-en-rCA.xml",
+            "map": [
+                {
+                    "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/cfce8cf6cd985c72abe5bd866dae8d14/browser-1.4.0/res/values-en-rCA/values-en-rCA.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,153,250,359",
+                        "endColumns": "97,96,108,98",
+                        "endOffsets": "148,245,354,453"
+                    }
+                },
+                {
+                    "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/7faa195573a483047671e33ddfc6dd7e/core-1.8.0/res/values-en-rCA/values-en-rCA.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "458",
+                        "endColumns": "100",
+                        "endOffsets": "554"
+                    }
+                }
+            ]
+        }
+    ]
+}

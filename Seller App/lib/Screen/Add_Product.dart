@@ -5569,7 +5569,8 @@ class _AddProductState extends State<AddProduct> with TickerProviderStateMixin {
           }
         }
 
-        //  print("reuest fields : ${request.fields}");
+         print("reuest fields : ${request.fields}");
+
         var response = await request.send();
         var responseData = await response.stream.toBytes();
         var responseString = String.fromCharCodes(responseData);

@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/firebase_auth/intermediates/incremental/mergeReleaseResources/merged.dir/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/cfce8cf6cd985c72abe5bd866dae8d14/browser-1.4.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,170,269,381",
+                        "endColumns": "114,98,111,105",
+                        "endOffsets": "165,264,376,482"
+                    }
+                },
+                {
+                    "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/927bd680c39f9a20b0f3fa5d823de851/core-1.6.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "487",
+                        "endColumns": "100",
+                        "endOffsets": "583"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/firebase_auth/intermediates/res/merged/release/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/cfce8cf6cd985c72abe5bd866dae8d14/browser-1.4.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,170,269,381",
+                        "endColumns": "114,98,111,105",
+                        "endOffsets": "165,264,376,482"
+                    }
+                },
+                {
+                    "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/927bd680c39f9a20b0f3fa5d823de851/core-1.6.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "487",
+                        "endColumns": "100",
+                        "endOffsets": "583"
+                    }
+                }
+            ]
+        }
+    ]
+}

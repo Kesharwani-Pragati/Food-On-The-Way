@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/image_picker_android/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/7faa195573a483047671e33ddfc6dd7e/core-1.8.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/image_picker_android/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/7faa195573a483047671e33ddfc6dd7e/core-1.8.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/image_picker_android/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/7faa195573a483047671e33ddfc6dd7e/core-1.8.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/image_picker_android/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/7faa195573a483047671e33ddfc6dd7e/core-1.8.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/image_picker_android/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/7faa195573a483047671e33ddfc6dd7e/core-1.8.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/image_picker_android/intermediates/res/merged/release/layout/custom_dialog.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/7faa195573a483047671e33ddfc6dd7e/core-1.8.0/res/layout/custom_dialog.xml"
+    }
+]

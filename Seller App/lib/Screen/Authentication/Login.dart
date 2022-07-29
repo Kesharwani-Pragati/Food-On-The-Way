@@ -8,6 +8,7 @@ import 'package:eshopmultivendor/Helper/String.dart';
 import 'package:eshopmultivendor/Helper/app_assets.dart';
 import 'package:eshopmultivendor/Screen/TermFeed/Privacy_Policy.dart';
 import 'package:eshopmultivendor/Screen/TermFeed/Terms_Conditions.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
@@ -63,6 +64,7 @@ class _LoginState extends State<Login> with TickerProviderStateMixin {
       status,
       storeLogo;
   bool _isNetworkAvail = true;
+  var fcmToken = "";
 
 //==============================================================================
 //============================= INIT Method ====================================
@@ -76,6 +78,7 @@ class _LoginState extends State<Login> with TickerProviderStateMixin {
     //   statusBarIconBrightness: Brightness.light,
     // ));
     super.initState();
+    geFcmToken();
     buttonController = new AnimationController(
         duration: new Duration(milliseconds: 2000), vsync: this);
 
@@ -94,6 +97,14 @@ class _LoginState extends State<Login> with TickerProviderStateMixin {
     setState(() {
       mobileController.text = "";
       passwordController.text = "";
+    });
+  }
+
+  geFcmToken() async {
+    String? token = await FirebaseMessaging.instance.getToken();
+    setState(() {
+      fcmToken = token!;
+      print(">>>>>>>>>>>>>>>>>>>>>>>>>>>$fcmToken");
     });
   }
 
@@ -232,6 +243,7 @@ class _LoginState extends State<Login> with TickerProviderStateMixin {
     var data = {
       Mobile: mobile,
       Password: password,
+      "fcm_id": "$fcmToken",
     };
 
     apiBaseHelper.postAPICall(getUserLoginApi, data).then(
@@ -501,6 +513,7 @@ class _LoginState extends State<Login> with TickerProviderStateMixin {
         top: 30.0,
       ),
       child: TextFormField(
+        maxLength: 10,
         onFieldSubmitted: (v) {
           FocusScope.of(context).requestFocus(passFocus);
         },
@@ -518,6 +531,7 @@ class _LoginState extends State<Login> with TickerProviderStateMixin {
           mobile = value;
         },
         decoration: InputDecoration(
+          counterText: "",
           focusedBorder: UnderlineInputBorder(
             borderSide: BorderSide(color: primary),
             borderRadius: BorderRadius.circular(7.0),

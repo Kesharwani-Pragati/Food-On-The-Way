@@ -1,0 +1,4 @@
+#Fri Jul 29 19:50:24 IST 2022
+base.0=/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

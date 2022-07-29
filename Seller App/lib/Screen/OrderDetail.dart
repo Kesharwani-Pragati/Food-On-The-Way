@@ -39,6 +39,7 @@ class StateOrder extends State<OrderDetail> with TickerProviderStateMixin {
   AnimationController? buttonController;
   bool _isNetworkAvail = true;
 
+  String? deliverBoy;
   Order_Model? model;
   String? pDate, prDate, sDate, dDate, cDate, rDate;
   List<String> statusList = [
@@ -62,7 +63,7 @@ class StateOrder extends State<OrderDetail> with TickerProviderStateMixin {
   // String? selectedValue;
   int? selectedDelBoy;
   final TextEditingController _controller = TextEditingController();
-  late StateSetter delBoyState;
+  StateSetter? delBoyState;
   bool fabIsVisible = true;
 
   @override
@@ -505,7 +506,7 @@ class StateOrder extends State<OrderDetail> with TickerProviderStateMixin {
       }
     }
 
-    if (mounted) delBoyState(() {});
+    if (mounted) delBoyState!(() {});
   }
 
   Future<void> delboyDialog(String status, int index) async {
@@ -574,9 +575,9 @@ class StateOrder extends State<OrderDetail> with TickerProviderStateMixin {
                                         selectedDelBoy = index;
                                         updateOrder(status, updateOrderItemApi,
                                             model!.id, true, itemindex);
-                                        setState(
-                                          () {},
-                                        );
+                                        setState(() {
+                                          deliverBoy = searchList[index].name!;
+                                        },);
                                       }
                                     },
                                     child: Container(
@@ -1166,7 +1167,7 @@ class StateOrder extends State<OrderDetail> with TickerProviderStateMixin {
                                                   child: Text(
                                                     index1 != -1
                                                         ? orderItem.deliverBy!
-                                                        : getTranslated(
+                                                         : getTranslated(
                                                             context,
                                                             "SELECTDELBOY",
                                                           )!,

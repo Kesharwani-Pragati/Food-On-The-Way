@@ -385,7 +385,7 @@ class StateProfile extends State<Profile> with TickerProviderStateMixin {
                   getSecondHeader(),
                   getThirdHeader(),
                   getFurthHeader(),
-                  changePass(),
+                  // changePass(),
                   updateBtn(),
                 ],
               )
@@ -848,16 +848,22 @@ class StateProfile extends State<Profile> with TickerProviderStateMixin {
                       ),
                 ),
                 address != "" && address != null
-                    ? Text(
-                        address!,
-                        style: Theme.of(this.context)
-                            .textTheme
-                            .subtitle2!
-                            .copyWith(
-                              color: lightBlack,
-                              fontWeight: FontWeight.bold,
-                            ),
-                      )
+                    ? Container(
+                  width: 200,
+                      child: Text(
+
+                          address!,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: Theme.of(this.context)
+                              .textTheme
+                              .subtitle2!
+                              .copyWith(
+                                color: lightBlack,
+                                fontWeight: FontWeight.bold,
+                              ),
+                        ),
+                    )
                     : Text(
                         getTranslated(context, "NotAdded")!,
                         style: Theme.of(this.context)
@@ -911,6 +917,7 @@ class StateProfile extends State<Profile> with TickerProviderStateMixin {
                           child: Padding(
                             padding: EdgeInsets.fromLTRB(20.0, 0, 20.0, 0),
                             child: TextFormField(
+                              maxLines: 2,
                               keyboardType: TextInputType.text,
                               style: Theme.of(this.context)
                                   .textTheme
@@ -1347,7 +1354,7 @@ class StateProfile extends State<Profile> with TickerProviderStateMixin {
                         overflow: TextOverflow.ellipsis,
                       )
                     : Text(
-                        getTranslated(context, "NoURL")!,
+                        getTranslated(context, "addDescription")!,
                         style: Theme.of(this.context)
                             .textTheme
                             .subtitle2!
@@ -1583,7 +1590,7 @@ class StateProfile extends State<Profile> with TickerProviderStateMixin {
                           child: Padding(
                             padding: EdgeInsets.fromLTRB(20.0, 0, 20.0, 0),
                             child: TextFormField(
-                              keyboardType: TextInputType.text,
+                              keyboardType: TextInputType.number,
                               style: Theme.of(this.context)
                                   .textTheme
                                   .subtitle1!
@@ -2952,7 +2959,7 @@ class StateProfile extends State<Profile> with TickerProviderStateMixin {
     );
   }
 
-  _showDialog() async {
+ /* _showDialog() async {
     await showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -3047,8 +3054,10 @@ class StateProfile extends State<Profile> with TickerProviderStateMixin {
                                     setStater(
                                       () {
                                         _showPassword = !_showPassword;
+                                        newPass = newPassC.toString();
                                       },
                                     );
+
                                   },
                                 ),
                               ),
@@ -3061,10 +3070,11 @@ class StateProfile extends State<Profile> with TickerProviderStateMixin {
                             child: TextFormField(
                               keyboardType: TextInputType.text,
                               validator: (value) {
+                                print("========$value");
                                 if (value!.length == 0)
                                   return getTranslated(
                                       context, "CON_PASS_REQUIRED_MSG")!;
-                                if (value != newPass) {
+                                if (value != newPassC!.text) {
                                   return getTranslated(
                                       context, "CON_PASS_NOT_MATCH_MSG")!;
                                 } else {
@@ -3149,6 +3159,118 @@ class StateProfile extends State<Profile> with TickerProviderStateMixin {
         );
       },
     );
+  }*/
+  _showDialog() async {
+    await showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return StatefulBuilder(
+          builder: (BuildContext context, StateSetter setStater) {
+            return AlertDialog(
+              contentPadding: const EdgeInsets.all(0.0),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5.0),
+                ),
+              ),
+              content: SingleChildScrollView(
+                scrollDirection: Axis.vertical,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(20.0, 20.0, 0, 2.0),
+                      child: Text(
+                        getTranslated(context, "CHANGE_PASS_LBL")!,
+                        style: Theme.of(this.context)
+                            .textTheme
+                            .subtitle1!
+                            .copyWith(color: fontColor),
+                      ),
+                    ),
+                    Divider(color: lightBlack),
+                    Form(
+                      key: _formKey,
+                      child: new Column(
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.all(5),
+                            child: TextField(
+                              // cursorColor: Color(0xffFF00FF) ,
+                              controller: curPassC,
+                              keyboardType: TextInputType.text,
+                              decoration: InputDecoration(
+                                hintText: "Current Password",
+                              ),
+                              obscureText: true,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(5),
+                            child: TextField(
+                              controller: newPassC,
+                              keyboardType: TextInputType.text,
+                              decoration: InputDecoration(
+                                hintText: "New Password",
+                              ),
+                              obscureText: true,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(5),
+                            child: TextField(
+                              controller: confPassC,
+                              keyboardType: TextInputType.text,
+                              decoration: InputDecoration(
+                                hintText: "Confirm Password",
+                              ),
+                              obscureText: true,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              actions: <Widget>[
+                new FlatButton(
+                    child: Text(
+                      getTranslated(context, "CANCEL")!,
+                      style: Theme.of(this.context)
+                          .textTheme
+                          .subtitle2!
+                          .copyWith(
+                          color: lightBlack, fontWeight: FontWeight.bold),
+                    ),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    }),
+                new FlatButton(
+                  child: Text(
+                    getTranslated(context, "SAVE_LBL")!,
+                    style: Theme.of(this.context).textTheme.subtitle2!.copyWith(
+                        color: fontColor, fontWeight: FontWeight.bold),
+                  ),
+                  onPressed: () {
+                    if(curPassC!.text.isNotEmpty){
+                      if(newPassC!.text == confPassC!.text){
+                        changePassWord();
+                      }else{
+                        setSnackbar("Password Not Match");
+                      }
+                    }else{
+                      setSnackbar("Current Password is Required");
+                    }
+                  },
+                )
+              ],
+            );
+          },
+        );
+      },
+    );
   }
 //==============================================================================
 //==================== Same API But Only PassPassword ==========================
@@ -3175,13 +3297,16 @@ class StateProfile extends State<Profile> with TickerProviderStateMixin {
         taxNumber: taxnumber ?? "",
         panNumber: pannumber ?? "",
         STATUS: status ?? "1",
-        OLDPASS: curPass,
-        NEWPASS: newPass,
+        OLDPASS: curPassC,
+        NEWPASS: newPassC,
       };
       apiBaseHelper.postAPICall(updateUserApi, parameter).then(
         (getdata) async {
           bool error = getdata["error"];
           String? msg = getdata["message"];
+          print(updateUserApi);
+          print(parameter.toString());
+          print(getdata["data"]);
           if (!error) {
             Navigator.pop(context);
             setSnackbar(msg!);

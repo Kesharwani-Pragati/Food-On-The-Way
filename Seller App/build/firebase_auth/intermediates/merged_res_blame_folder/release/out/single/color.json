@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/firebase_auth/intermediates/res/merged/release/color/common_google_signin_btn_tint.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/ef9e79cdc0b02c75c294239231ef44c0/jetified-play-services-base-17.1.0/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/firebase_auth/intermediates/res/merged/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/ef9e79cdc0b02c75c294239231ef44c0/jetified-play-services-base-17.1.0/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/alphawizz/Documents/Pragati/Food-On-Way-Collection/Seller App/build/firebase_auth/intermediates/res/merged/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/alphawizz/.gradle/caches/transforms-2/files-2.1/ef9e79cdc0b02c75c294239231ef44c0/jetified-play-services-base-17.1.0/res/color/common_google_signin_btn_text_light.xml"
+    }
+]
