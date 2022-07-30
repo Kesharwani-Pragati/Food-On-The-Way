@@ -151,6 +151,7 @@ class StateOrder extends State<OrderDetail> with TickerProviderStateMixin {
           if (!error) {
             var data = getdata["data"];
             if (data.length != 0) {
+              searchList.clear();
               tempList = (data as List)
                   .map((data) => new Order_Model.fromJson(data))
                   .toList();
@@ -158,9 +159,7 @@ class StateOrder extends State<OrderDetail> with TickerProviderStateMixin {
               for (int i = 0; i < tempList[0].itemList!.length; i++)
                 tempList[0].itemList![i].curSelected =
                     tempList[0].itemList![i].status;
-
               searchList.addAll(delBoyList);
-
               if (tempList[0].itemList![0].deliveryBoyId != null)
                 selectedDelBoy = delBoyList.indexWhere(
                     (f) => f.id == tempList[0].itemList![0].deliveryBoyId);
@@ -500,7 +499,6 @@ class StateOrder extends State<OrderDetail> with TickerProviderStateMixin {
     searchList.clear();
     for (int i = 0; i < delBoyList.length; i++) {
       PersonModel map = delBoyList[i];
-
       if (map.name!.toLowerCase().contains(searchText)) {
         searchList.add(map);
       }
@@ -965,14 +963,21 @@ class StateOrder extends State<OrderDetail> with TickerProviderStateMixin {
   productItem(OrderItem orderItem, Order_Model model, int i) {
     List att = [], val = [];
     // List? del;
-    if (orderItem.attr_name!.isNotEmpty) {
+    if (orderItem.attr_name != null && orderItem.attr_name!.isNotEmpty) {
       att = orderItem.attr_name!.split(',');
       val = orderItem.varient_values!.split(',');
     }
-    final index1 = searchList
-        .indexWhere((element) => element.id == orderItem.deliveryBoyId);
+    var index1;
+    if(orderItem.deliveryBoyId != null){
+      index1 = searchList
+          .indexWhere((element) => element.id == orderItem.deliveryBoyId);
+    }
+    var orderImage = "";
+    if(orderItem.image != null){
+      orderImage = orderItem.image!;
+    }
 
-    int? currentselected_DelBoy;
+
     return Card(
       elevation: 0,
       child: Padding(
@@ -985,7 +990,7 @@ class StateOrder extends State<OrderDetail> with TickerProviderStateMixin {
                     borderRadius: BorderRadius.circular(10.0),
                     child: FadeInImage(
                       fadeInDuration: Duration(milliseconds: 150),
-                      image: NetworkImage(orderItem.image!),
+                      image: NetworkImage(orderImage),
                       height: 90.0,
                       width: 90.0,
                       placeholder: placeHolder(90),
@@ -1165,8 +1170,8 @@ class StateOrder extends State<OrderDetail> with TickerProviderStateMixin {
                                               children: [
                                                 Expanded(
                                                   child: Text(
-                                                    index1 != -1
-                                                        ? orderItem.deliverBy!
+                                                    index1 != -1 && orderItem.delivery_boy_name != null
+                                                        ? orderItem.delivery_boy_name!
                                                          : getTranslated(
                                                             context,
                                                             "SELECTDELBOY",

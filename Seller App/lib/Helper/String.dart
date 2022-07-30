@@ -141,6 +141,8 @@ const String AttrValueIds = 'attr_value_ids';
 const String StoreName = 'store_name';
 const String SellerName = 'seller_name';
 const String Name = 'name';
+const String delivery_boy_name = 'delivery_boy_name';
+
 
 const String Slug = 'slug';
 const String Description = 'description';
@@ -204,6 +206,7 @@ const String TaxAmount = 'tax_amount';
 const String SubTotal = 'sub_total';
 const String DeliverBy = 'deliver_by';
 const String ActiveStatus = 'active_status';
+
 const String OrderCounter = 'order_counter';
 const String OrderCancelCounter = 'order_cancel_counter';
 const String OrderReturn_counter = 'order_return_counter';

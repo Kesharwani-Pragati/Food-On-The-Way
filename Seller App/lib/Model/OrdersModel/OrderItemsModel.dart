@@ -20,6 +20,7 @@ class OrderItem {
       productId,
       curSelected,
       deliveryBoyId,
+      delivery_boy_name,
       deliverBy;
 
   List<String?>? listStatus = [];
@@ -28,6 +29,7 @@ class OrderItem {
   OrderItem(
       {this.qty,
       this.id,
+        this.delivery_boy_name,
       this.name,
       this.price,
       this.subTotal,
@@ -62,6 +64,7 @@ class OrderItem {
         id: json[Id],
         qty: json[Quantity],
         name: json[Name],
+        delivery_boy_name: json["delivery_boy_name"],
         activeStatus: json[ActiveStatus],
         image: json[IMage],
         price: json[Price],
